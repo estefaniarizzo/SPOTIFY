@@ -1,0 +1,157 @@
+.playlist-view {
+  padding: 24px;
+  color: white;
+}
+
+.playlist-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.playlist-cover {
+  width: 232px;
+  height: 232px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, .5);
+}
+
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.playlist-type {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.playlist-info h1 {
+  font-size: 96px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 96px;
+}
+
+.playlist-description {
+  color: #b3b3b3;
+  margin: 8px 0;
+}
+
+.playlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.songs-header {
+  display: grid;
+  grid-template-columns: 48px 1fr 1fr 48px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  padding-bottom: 8px;
+}
+
+.song-row {
+  display: grid;
+  grid-template-columns: 48px 1fr 1fr 48px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.song-row:hover {
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.song-row.playing {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.song-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b3b3b3;
+}
+
+.play-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.song-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.song-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  color: white;
+  font-weight: 500;
+}
+
+.song-artist {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.song-album {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+}
+
+.song-duration {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+  .playlist-header {
+    flex-direction: column;
+  }
+
+  .playlist-cover {
+    width: 192px;
+    height: 192px;
+  }
+
+  .playlist-info h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .songs-header,
+  .song-row {
+    grid-template-columns: 48px 1fr 48px;
+  }
+
+  .song-album {
+    display: none;
+  }
+} 

@@ -1,0 +1,110 @@
+.favorites {
+  padding: 24px;
+}
+
+.favorites-header {
+  margin-bottom: 32px;
+}
+
+.favorites-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.favorites-header p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 48px;
+  color: #b3b3b3;
+}
+
+.empty-favorites h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.empty-favorites p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Reutilizamos los estilos de las tarjetas de álbum de Home.css */
+.album-card {
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.album-card:hover {
+  background-color: #282828;
+}
+
+.album-cover-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.album-cover-container img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1DB954;
+  border: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s;
+}
+
+.album-card:hover .play-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background-color: #1ed760;
+}
+
+.album-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 8px 0;
+}
+
+.album-card p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+} 

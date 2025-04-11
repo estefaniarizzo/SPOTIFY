@@ -1,0 +1,27 @@
+.visualizer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.audio-visualizer {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .visualizer-container {
+    padding: 8px;
+  }
+
+  .audio-visualizer {
+    height: 60px;
+  }
+} 
