@@ -2,7 +2,7 @@ import aerosmithCover from '../assets/images/aerosmith.jpeg';
 import bonjoviCover from '../assets/images/bon jovi.jpg';
 import nickelbackCover from '../assets/images/nickelback.jpg';
 import smashMouthCover from '../assets/images/smashmouth.jpeg';
-
+  
 // Importar todos los archivos de audio
 import aerosmithIDWTMAT from '../assets/audio/Aerosmith - I Don\'t Want to Miss a Thing.mp3';
 import aerosmithAmazing from '../assets/audio/Aerosmith - Amazing.mp3';
